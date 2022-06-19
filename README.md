@@ -11,22 +11,20 @@
 
 ## 1. Definición del producto
 
-Este es un proyecto desarrollado en React que muestra un listado de paises llamados desde la [API](https://restcountries.com/#api-endpoints-v2). Este proyecto esta relaizado en sintaxis jsx con JavaScript y CSS.
-Su estrutura esta realizada con 2 componentes de clase y 4 componenetes de función.
+Este es un proyecto desarrollado en React que muestra un listado de países llamados desde la [API](https://restcountries.com/#api-endpoints-v2). Este proyecto está realizado en sintaxis jsx con JavaScript y CSS. Su estructura está realizada con 2 componentes de clase y 4 componentes de función.
 
-- App.js : Es un componente de clase donde se realizo el routeo con react-router-dom ademas de ser el componente principal alli se establece el stado principal del componente y se consumo la API con el metodo fetch(), tambien renderizamos la dar¿ta con el metodo de react  componentDidMount()
+- App.js : Es un componente de clase donde se realizó el ruteo con react-router-dom además de ser el componente principal allí se establece el estado principal del componente y se consumó la API con el método fetch(), también renderizamos la dar¿ta con el método de react componentDidMount()
+- Countries.jsx : Es un componente de función donde se renderiza la data según la condición que indica si se ha cargado o no la misma, además de tener un componente hijo donde se estructura el formato que tendrá la data.
+- Cards.jsx : Lleva la estructura que tendrán las tarjetas que se renderizan.
 
-- Countries.jsx : Es un componente de función donde se renderiza la data segun la condición que indica si se ha cargado o no la misma, ademas de tener un componente hijo donde se estructura el formado que tendra la data.
+- Seeker.jsx: Es un Componente de clase donde se estructura el input (barra de búsqueda) y se toma su valor para filtrar función que se realiza desde el componente principal
 
-- Cards.jsx : Lleva la estrutura que tendran las tarjetas que se renderizan.
+- SelectFilter.jsx: Componente de Función donde se renderizan las regiones a través de un select (caja de opciones) y este valor seleccionado se toma para filtrar según la región y así renderiza de acuerdo a lo seleccionado.
 
-- Seeker.jsx: Es un Componente de clase donde se estrutura el input (barra de busqueda) y se toma su valor para filtrr función que se realiza desde el componente principal
+- Details.jsx : Componente de función donde se renderiza de acuerdo al nombre del pais, se realizan funciones como getCountr() para obtener el pais, getBorders() para obtener los paises fronterizos, getLanguages() para obtener los lenguajes y getCurrencies() para obtener las monedas del país correspondiente.
 
-- SelectFilter.jsx: Componene de Función donde se renderizan las regiones a traves de un select (caja de opciones) y este valor seleccionado se toma para filtrar segun la región y asi renderiza de acuerdo a lo seleccionado.
+- Header.jsx : se establece la estructura del header y se aplica función desde el componente padre para dar efecto darkmode.
 
-- Details.jsx : Componente de función donde se renderiza de acuerdo al nombre del pais, se realizan funciones como getCountr() para obtener el pais, getBorders() para obtener los paises fronterizos, getLanguages() para obtener los lenguajes y getCurrencies() para obtener las monedas del pais correspondiente.
-
-- Header.jsx : se establece la estrutura del header y se aplica función desde el componente padre para dar efecto darkmode.
 
 ## 2. Pasos para la solución
 
